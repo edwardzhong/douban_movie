@@ -1,0 +1,7 @@
+<import src="../template/list"/>/
+<view class='search-section'>
+  <input type='text' placeholder='search movie' placeholder-class="search-placeholder" focus confirm-type="search" bindconfirm="handleSearch"></input>
+</view>
+<view class='container'>
+<template is="theaters" data="{{ movies }}"/>
+</view>

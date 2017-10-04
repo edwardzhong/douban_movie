@@ -1,0 +1,103 @@
+page {
+  width: 100%;
+  min-height: 100%;
+  background-color: #f9f9f9;
+  font-family: -apple-system-font, 'Helvetica Neue', Helvetica, 'Microsoft YaHei', sans-serif;
+}
+.container {
+  font-size: 30rpx;
+  color:#666666;
+  line-height: 1.8;
+} 
+
+.list-title{
+  padding: 20rpx;
+  margin: 10rpx 0;
+  border-bottom: 1rpx solid #eeeeee;
+  /* color:#2277aa; */
+  font-size: 34rpx;
+}
+.list-container .item{
+  display: flex;
+  flex-flow:row wrap;
+  justify-content: flex-start;
+  box-sizing: border-box;
+  height: 300rpx;
+  padding: 10rpx;
+  overflow: hidden;
+  border-bottom: 1rpx dashed #ddd;
+}
+.list-container image{
+  width: 200rpx;
+  height: 100%;
+}
+.list-container .info{
+  box-sizing: border-box;
+  width: 530rpx;
+  padding: 0 20rpx;
+  line-height: 1.6;
+}
+
+.list-container text{
+  display: block;
+  font-size: 26rpx;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.list-container .title{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  white-space:normal;
+  line-height: 1.5;
+  font-size: 28rpx;
+  color: #2277aa;
+}
+.list-container .point{
+  display: inline-block; 
+  font-weight: bold;
+  color:coral;
+}
+.list-container .count-label{
+  display: inline-block;
+}
+.list-container .count{
+  display: inline-block;
+  font-size: 24rpx;
+}
+.info view{
+  margin-top: -15rpx;
+}
+.info view text{
+  overflow:initial;
+}
+.list-container .rank-label{
+  display: inline-block;
+}
+.list-container .rank{
+  display: inline-block;
+  font-size: 30rpx;
+  font-weight: bold;
+  color:coral;
+}
+.no-result{
+  text-align: center;
+  line-height: 3;
+}
+.search-section{
+  position: fixed; 
+  top: 0;
+  left:0;
+  z-index: 99;
+  width: 100%;
+  background-color: #fff;
+}
+.search-section input{
+  text-align: center;
+  padding: 15rpx;
+}
+.search-placeholder {
+  text-align: center;
+  color: #ccc;
+}

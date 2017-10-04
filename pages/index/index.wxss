@@ -1,0 +1,14 @@
+/**index.wxss**/
+.slide swiper{
+  height: 400px;
+}
+.slide swiper image {
+  height: 340px;
+  width: 100%;
+}
+.slide swiper .title{
+  display: block;
+  text-align: center;
+  font-size: 34rpx;
+  /* color: #2277aa; */
+}

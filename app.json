@@ -1,0 +1,50 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/subject/subject",
+    "pages/theaters/theaters",
+    "pages/search/search",
+    "pages/comming/comming",
+    "pages/rank/rank",
+    "pages/logs/logs"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#545652",
+    "navigationBarTitleText": "Douban Movie",
+    "navigationBarTextStyle":"white",
+    "enablePullDownRefresh": true,
+    "onReachBottomDistance": 50
+  },
+  "tabBar": {
+    "color":"#666666",
+    "selectedColor":"#2277aa",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath":"images/home.png",
+        "selectedIconPath":"images/home_s.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "images/search.png",
+        "selectedIconPath": "images/search_s.png"
+      },
+      {
+        "pagePath": "pages/comming/comming",
+        "text": "即将上映",
+        "iconPath": "images/comming.png",
+        "selectedIconPath": "images/comming_s.png"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "text": "排行榜",
+        "iconPath": "images/rank.png",
+        "selectedIconPath": "images/rank_s.png"
+      }
+    ]
+  },
+  "debug": true
+}

@@ -1,0 +1,10 @@
+.rank-title{
+  padding: 20rpx;
+  font-weight: bold;
+  font-size: 34rpx;
+  border-bottom: 1rpx solid #ddd;
+}
+
+.rank-title text{
+  color: coral;
+}

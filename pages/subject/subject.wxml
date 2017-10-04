@@ -1,0 +1,20 @@
+<!--pages/subject/subject.wxml-->
+<view class="container">
+<view class="title"><text>{{movie.titles}} ({{movie.year}})</text></view>
+<view class="cover">
+  <image src="{{movie.images.large}}" mode="aspectFit"></image>
+</view>
+<view class='detail'>
+  <view><text>导演：</text>{{movie.directorsStr}}</view>
+  <view><text>主演：</text>{{movie.castsStr}}</view>
+  <view><text>类型：</text>{{movie.genresStr}}</view>
+  <view><text>国家/地区：</text>{{movie.countriesStr}}</view>
+  <view><text>其他名称：</text>{{movie.akas}}</view>
+  <view class='rat'>
+    <text>评分：</text>
+    <text class='count'>{{movie.rating.average}} </text>
+    <text>( {{movie.ratings_count}}人评分/{{movie.comments_count}}人评价 )</text>
+  </view>
+</view>
+
+</view>

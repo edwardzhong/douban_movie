@@ -1,0 +1,61 @@
+<template name="theaters">
+  <view class="list-container">
+    <block wx:for="{{movies}}" wx:key="id">
+      <navigator url="/pages/subject/subject?id={{item.id}}">
+        <view class="item">
+          <image src="{{item.images.medium}}" mode="aspectFit"></image>
+            <view class="info">
+              <text class="title">{{item.titles}}</text>
+              <text>类型：{{item.types}}</text>
+              <text>导演：{{item.directorsStr}}</text>
+              <text>主演：{{item.castsStr}}</text>
+              <text>看过人数：{{item.collect_count}}</text>
+              <text class="point"> {{item.rating.average}} </text>
+              <text class="count" space="nbsp"> ({{item.collect_count}}人评论) </text>
+            </view>
+        </view>
+        </navigator>
+      </block>
+    </view>
+</template>
+<template name="comming">
+  <view class="list-container">
+    <block wx:for="{{movies}}" wx:key="id">
+      <navigator url="/pages/subject/subject?id={{item.id}}">
+        <view class="item">
+          <image src="{{item.images.medium}}" mode="aspectFit"></image>
+            <view class="info">
+              <text class="title">{{item.titles}}</text>
+              <text>主演：{{item.castsStr}}</text>
+              <text>类型：{{item.types}}</text>
+              <text>导演：{{item.directorsStr}}</text>
+            </view>
+        </view>
+        </navigator>
+      </block>
+    </view>
+</template>
+<template name="rank">
+  <view class="list-container">
+    <block wx:for="{{movies}}" wx:key="id">
+      <navigator url="/pages/subject/subject?id={{item.id}}">
+        <view class="item">
+          <image src="{{item.images.medium}}" mode="aspectFit"></image>
+            <view class="info">
+              <text class="title">{{item.titles}}</text>
+              <text>类型：{{item.types}}</text>
+              <text>导演：{{item.directorsStr}}</text>
+              <text>主演：{{item.castsStr}}</text>
+              <text class='count-label'>评分：</text>
+              <text class="point"> {{item.rating.average}} </text>
+              <text class="count" space="nbsp"> ({{item.collect_count}}人评论) </text>
+              <view>
+                <text class="rank-label">票房：</text>
+                <text class='rank'>{{item.boxs}}</text>
+              </view>
+            </view>
+        </view>
+        </navigator>
+      </block>
+    </view>
+</template>

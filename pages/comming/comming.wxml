@@ -1,0 +1,6 @@
+<import src="../template/list"/>
+<view class="container">
+  <view class="list-title">即将上映</view>
+  <template is="comming" data="{{ movies }}"/>
+  <view wx:if="{{showNoResult}}" class='no-result'>没有更多内容了</view>
+</view>

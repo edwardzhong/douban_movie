@@ -1,0 +1,7 @@
+<import src="../template/list"/>
+<view class="container">
+  <view class="rank-title">
+    <text>{{rankDate}}</text>
+  北美排行榜</view>
+  <template is="rank" data="{{ movies }}"/>
+</view>
