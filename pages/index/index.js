@@ -30,7 +30,7 @@ Page({
         wx.hideLoading();
         wx.showModal({
           title: '获取后台数据失败',
-          content: err.msg,
+          content: err.msg||'服务器错误',
         });
         console.log(err);
       });

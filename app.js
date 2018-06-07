@@ -64,6 +64,11 @@ App({
    */
   getUsBox:function(data,succ,fail){
     util.sendRequest('https://api.douban.com/v2/movie/us_box?_r='+Math.random(),data,function (res) {
+      if (!res.data.subjects){
+        console.log(res.data);
+        fail(res);
+        return;
+      }
       res.data.subjects.forEach(s=>{
         Object.assign(s,s.subject);
         var sum=s.box,Yi=0,Wa=0;
