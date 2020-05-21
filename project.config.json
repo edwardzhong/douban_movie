@@ -11,6 +11,8 @@
 	"libVersion": "1.5.4",
 	"appid": "wxb2b1dfd419b53b4f",
 	"projectname": "douban%20movie",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
 	"condition": {
 		"search": {
 			"current": -1,

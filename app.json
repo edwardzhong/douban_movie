@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/index/index",
     "pages/subject/subject",
     "pages/theaters/theaters",
@@ -8,23 +8,28 @@
     "pages/rank/rank",
     "pages/logs/logs"
   ],
-  "window":{
-    "backgroundTextStyle":"light",
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#545652",
     "navigationBarTitleText": "Douban Movie",
-    "navigationBarTextStyle":"white",
+    "navigationBarTextStyle": "white",
     "enablePullDownRefresh": true,
     "onReachBottomDistance": 50
   },
   "tabBar": {
-    "color":"#666666",
-    "selectedColor":"#2277aa",
+    "color": "#666666",
+    "selectedColor": "#2277aa",
     "list": [
       {
         "pagePath": "pages/index/index",
         "text": "首页",
-        "iconPath":"images/home.png",
-        "selectedIconPath":"images/home_s.png"
+        "iconPath": "images/home.png",
+        "selectedIconPath": "images/home_s.png"
       },
       {
         "pagePath": "pages/search/search",
@@ -46,5 +51,6 @@
       }
     ]
   },
-  "debug": true
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
 }
